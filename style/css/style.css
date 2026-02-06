@@ -293,25 +293,33 @@ nav a:hover {
   gap:20px;
 }
 
-.brand {
+.brand .container {
   margin-top: 200px;
+  background-color: #2C353D33;
+  border-radius: 25px;
+  background:
+    radial-gradient(circle at 3% 5%, rgba(255,106,61,0.20) 0%, transparent 10%),
+    #2C353D33;  
 }
 
 .brand h2 {
   text-align: center;
-  font-size: 48px;
-  margin-bottom: 60px;
+  font-size: 24px;
+  margin-bottom: 55px;
+  padding-top: 55px;
+  font-weight: normal
 }
 
 .brand-logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 107px;
+  padding-bottom: 55px;
+  padding-left: 83px;
+  padding-right: 83px;
 }
 
-.brand-logos img:hover {
-  opacity: 1;
-}
 
 .newcomers {
   margin-top: 200px;
@@ -319,15 +327,19 @@ nav a:hover {
 
 .newcomers .container {
   display: flex;
-  gap: 80px;
+  justify-content: space-between;
+  outline: auto;
 }
 
 .newcomers-header {
-  max-width: 330px;
+  width: 427px;
+  height: 300px;
+  margin-top: 20px;
 }
 
 .newcomers-header h2 {
   font-size: 48px;
+  font-weight: normal;
 }
 
 .newcomers-header p {
@@ -345,11 +357,15 @@ nav a:hover {
 }
 
 .newcomers .tools-grid {
+  display: flex;
   justify-content: flex-start;
+  max-width: 600px;
 }
 
 .newcomers .tool-card {
   width: calc((100% - 25px) / 2);
+  max-width: 288px;
+  max-height: 284px;
 }
 
 .newcomers .tool-card:hover {
