@@ -54,8 +54,18 @@ nav{
 }
 nav ul {
   display: flex;       
-  gap: 30px;            
-  list-style: none;     
+  gap: 30px;                
+  justify-content: space-between; 
+}
+
+.categories{
+  display: flex;
+  align-items: center;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
 }
 
 nav a {
